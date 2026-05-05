@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="Styles/header.css">
     <link rel="stylesheet" href="Styles/home-section.css">
     <link rel="stylesheet" href="Styles/shared.css">
+    <link rel="stylesheet" href="Styles/gallery.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -86,10 +87,35 @@
         </div>
 
       </section>
+
+      <!-- Gallery Section -->
+      <section class="gallery-section" id="gallery-section-id">
+        <h2>Gallery</h2>
+        <p class="gallery-description">Discover our serene spa moments captured in time.</p>
+        <div class="gallery-container js-gallery-container">
+          <!-- Gallery items will be dynamically inserted here -->
+        </div>
+        <button class="view-more-btn js-view-more-btn">
+          View More
+        </button>
+      </section>
     </main>
+    <!-- Image Modal -->
+    <div class="image-modal js-image-modal">
+      <span class="close-modal js-close-modal">&times;</span>
+
+      <img class="modal-image js-modal-image" src="" alt="Preview Image">
+
+      <div class="modal-nav">
+        <button class="prev-btn js-prev-btn">&#10094;</button>
+        <button class="next-btn js-next-btn">&#10095;</button>
+      </div>
+    </div>
+    
     <footer>
 
     </footer>
     <script src="Scripts/header.js"></script>
+    <script type="module" src="Scripts/gallery.js"></script>
   </body>
 </html>
