@@ -1,6 +1,7 @@
 import { galleryData } from "./data/gallery-data.js";
 
 const galleryContainer = document.querySelector('.js-gallery-container');
+const viewMoreBtn = document.querySelector('.js-view-more-btn');
 
 const modal = document.querySelector('.js-image-modal');
 const modalImg = document.querySelector('.js-modal-image');
@@ -66,3 +67,14 @@ window.addEventListener('keydown', (e) => {
 });
 
 renderGallery();
+
+viewMoreBtn.addEventListener('click', () => {
+  showAll = !showAll;
+  renderGallery();
+
+  viewMoreBtn.textContent = showAll ? 'View Less' : 'View More';
+
+  // smooth scroll back to gallery top
+  document.querySelector('.gallery-section')
+    .scrollIntoView({ behavior: 'smooth' });
+});

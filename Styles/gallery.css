@@ -1,40 +1,38 @@
 .gallery-section {
-  padding: 60px 40px;
+  padding: 60px 20px;
   background-color: #ececec;
   text-align: center;
 }
 
-/* TITLE */
-.gallery-section h2 {
-  font-size: 36px;
+.gallery-section h2{
+  font-size: 35px;
   margin-bottom: 10px;
   font-family: 'Playfair Display', serif;
   color: #D4AF37;
 }
 
-/* DESCRIPTION */
-.gallery-description {
+
+.gallery-description{
   font-size: 16px;
   color: #555;
   margin-bottom: 30px;
 }
 
-/* GRID */
+
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-  padding: 0 10px;
+  padding: 40px 10px;
 }
 
-/* ITEM */
 .gallery-item {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
 }
 
-/* IMAGE */
+
 .gallery-image {
   width: 100%;
   height: 260px;
@@ -44,7 +42,7 @@
   border-radius: 10px;
 }
 
-/* HOVER EFFECT */
+
 .gallery-item:hover .gallery-image {
   transform: scale(1.05);
 }
@@ -61,6 +59,7 @@
   font-weight: 600;
 
   transition: 0.3s ease;
+  margin-bottom: 30px;
 }
 
 .view-more-btn:hover {
@@ -73,67 +72,14 @@
   animation: fadeIn 0.4s ease forwards;
 }
 
+
+
 @keyframes fadeIn {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
-
-
-.image-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  background: rgba(0,0,0,0.9);
-  display: none;
-  justify-content: center;
-  align-items: center;
-
-  z-index: 9999;
-}
-
-.image-modal.active {
-  display: flex;
-}
-
-.modal-image {
-  max-width: 90%;
-  max-height: 80%;
-  border-radius: 10px;
-}
-
-.close-modal {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-
-  font-size: 35px;
-  color: white;
-  cursor: pointer;
-}
-
-.modal-nav {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 30px;
-}
-
-.modal-nav button {
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 40px;
-  cursor: pointer;
-}
-
 
 
 .video-section {
@@ -181,4 +127,56 @@
   height: 220px;
   object-fit: cover;
   display: block;
+}
+
+
+@media (max-width: 768px) {
+
+  .video-section {
+    padding: 50px 5px;
+  }
+
+  .video-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0;
+  }
+
+  .video-card video {
+    height: 180px;
+  }
+
+}
+
+
+
+
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+.image-modal.active {
+  display: flex;
+}
+
+.modal-image {
+  max-width: 90%;
+  max-height: 80%;
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
 }
