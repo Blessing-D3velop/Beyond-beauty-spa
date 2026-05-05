@@ -1,0 +1,130 @@
+
+.home-section {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 80px;
+  padding:0;
+}
+
+.home-section-image-container {
+  width: 100%;
+  height: 100%;
+}
+
+.home-section-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.home-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+
+.home-info-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  z-index: 2;
+  color: white;
+  text-align: center;
+
+  max-width: 750px;
+  padding: 0px;
+}
+
+/* TOP TEXT */
+.home-info-container p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #ddd;
+  margin: 0 0 10px 0;
+}
+
+/* MAIN TITLE */
+.home-info-container h1 {
+  font-size: 52px;
+  font-family: 'Playfair Display', serif;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+.home-info-container h1 span {
+  display: block;
+  font-style: italic;
+  color: #D4AF37;
+}
+
+/* BUTTON SECTION */
+.home-section-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* BASE BUTTON */
+.home-section-buttons button {
+  padding: 10px 22px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+/* PRIMARY BUTTON */
+.explore-treatements-btn {
+  background: #D4AF37;
+  color: white;
+}
+
+.explore-treatements-btn:hover {
+  background: #b8962f;
+}
+
+/* SECONDARY BUTTON */
+.home-section-buttons button:not(.explore-treatements-btn) {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.home-section-buttons button:not(.explore-treatements-btn):hover {
+  background: white;
+  color: black;
+}
+
+/* SCROLL TEXT */
+.home-section-buttons p {
+  width: 100%;
+  margin-top: 15px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #bbb;
+}
+
+@media (max-width: 768px) {
+  .home-info-container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    max-width: 90%;
+    max-height: 70vh;
+    overflow-y: auto;
+    padding: 15px;
+  }
+}
