@@ -14,7 +14,7 @@ let showAll = false;
 const renderGallery = () => {
   galleryContainer.innerHTML = '';
 
-  const dataToShow = showAll ? galleryData : galleryData.slice(0, 6);
+  const dataToShow = showAll ? galleryData : galleryData.slice(0, 5);
 
   dataToShow.forEach((image, index) => {
     galleryContainer.innerHTML += `
