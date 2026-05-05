@@ -132,3 +132,25 @@
     padding: 15px;
   }
 }
+
+
+
+.scroll-text {
+  width: 100%;
+  margin-top: 15px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #bbb;
+
+  animation: bounceScroll 1.6s infinite;
+}
+
+/* bounce animation */
+@keyframes bounceScroll {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
