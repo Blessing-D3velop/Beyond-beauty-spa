@@ -43,7 +43,6 @@
   padding: 0px;
 }
 
-/* TOP TEXT */
 .home-info-container p {
   font-size: 14px;
   letter-spacing: 2px;
@@ -51,7 +50,6 @@
   margin: 0 0 10px 0;
 }
 
-/* MAIN TITLE */
 .home-info-container h1 {
   font-size: 52px;
   font-family: 'Playfair Display', serif;
@@ -65,7 +63,7 @@
   color: #D4AF37;
 }
 
-/* BUTTON SECTION */
+
 .home-section-buttons {
   margin-top: 25px;
   display: flex;
@@ -74,7 +72,7 @@
   flex-wrap: wrap;
 }
 
-/* BASE BUTTON */
+
 .home-section-buttons button {
   padding: 10px 22px;
   border-radius: 25px;
@@ -84,7 +82,7 @@
   transition: 0.3s ease;
 }
 
-/* PRIMARY BUTTON */
+
 .explore-treatements-btn {
   background: #D4AF37;
   color: white;
@@ -94,7 +92,7 @@
   background: #b8962f;
 }
 
-/* SECONDARY BUTTON */
+
 .home-section-buttons button:not(.explore-treatements-btn) {
   background: transparent;
   border: 1px solid white;
@@ -106,7 +104,7 @@
   color: black;
 }
 
-/* SCROLL TEXT */
+
 .home-section-buttons p {
   width: 100%;
   margin-top: 15px;
@@ -114,11 +112,17 @@
   letter-spacing: 3px;
   color: #bbb;
 }
+.home-info-container .home-description {
+  margin-top: 15px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #ddd;
+}
 
 @media (max-width: 768px) {
   .home-info-container {
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
 
