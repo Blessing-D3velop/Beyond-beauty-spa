@@ -1,0 +1,112 @@
+.footer {
+  background: #111;
+  color: #ddd;
+  padding: 60px 40px 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* BRAND */
+.footer-brand h2 {
+  color: #D4AF37;
+  margin-bottom: 15px;
+}
+
+.footer-brand p {
+  line-height: 1.6;
+  color: #aaa;
+}
+
+/* LINKS */
+.footer-links h3,
+.footer-contact h3 {
+  color: #D4AF37;
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  cursor: pointer;
+  margin-bottom: 8px;
+  color: #ccc;
+  transition: 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #D4AF37;
+}
+
+/* CONTACT */
+.footer-contact p {
+  margin-bottom: 8px;
+  color: #ccc;
+}
+
+/* SOCIALS */
+.footer-socials {
+  margin-top: 15px;
+}
+
+.footer-socials a {
+  display: inline-block;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #D4AF37;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-policy span {
+  margin-left: 15px;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.footer-policy span:hover {
+  color: #D4AF37;
+}
+
+/* 🔥 RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 50px 20px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .footer-policy span {
+    margin: 0 8px;
+  }
+}

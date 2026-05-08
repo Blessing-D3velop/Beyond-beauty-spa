@@ -24,3 +24,36 @@ function updateHeader() {
 
 window.addEventListener("scroll", updateHeader);
 window.addEventListener("load", updateHeader);
+
+
+const scrollToSection = (id) => {
+  const section = document.getElementById(id);
+
+  if (section) {
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
+};
+
+/* MAP ALL NAV ITEMS (DESKTOP + MOBILE) */
+const navMap = [
+  { selector: ".js-home", target: "home-section-id" },
+  { selector: ".js-about", target: "about-section-id" },
+  { selector: ".js-services", target: "services-section-id" },
+  { selector: ".js-gallery", target: "gallery-section-id" },
+  { selector: ".js-testimonials", target: "testimonials-section-id" },
+  { selector: ".js-contact", target: "contact-section-id" }
+];
+
+/* APPLY TO ALL MATCHES (DESKTOP + MOBILE INCLUDED) */
+navMap.forEach((item) => {
+  const elements = document.querySelectorAll(item.selector);
+
+  elements.forEach((el) => {
+    el.addEventListener("click", () => {
+      scrollToSection(item.target);
+    });
+  });
+});

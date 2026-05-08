@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="Styles/shared.css">
     <link rel="stylesheet" href="Styles/gallery.css">
     <link rel="stylesheet" href="Styles/services-section.css">
+    <link rel="stylesheet" href="Styles/about-section.css">
+    <link rel="stylesheet" href="Styles/testimonial-section.css">
+    <link rel="stylesheet" href="Styles/contact-section.css">
+    <link rel="stylesheet" href="Styles/footer.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,11 +38,11 @@
       </div>
       <nav class="middle-section">
         <p class="home js-home">Home</p>
-        <p class="about-jsabout">About</p>
-        <p class="services-jservices">Services</p>
-        <p class="gallery-jsgallery">Gallery</p>
-        <p class="testimonials-jstestimonials">Testimonials</p>
-        <p class="contact-jscontact">Contact</p>
+        <p class="about js-about">About</p>
+        <p class="services js-services">Services</p>
+        <p class="gallery js-gallery">Gallery</p>
+        <p class="testimonials js-testimonials">Testimonials</p>
+        <p class="contact js-contact">Contact</p>
       </nav>
       <div>
         <button class="book-now-btn">Book Now</button>
@@ -67,6 +71,7 @@
     </div>
 
     <main>
+      <!--Home Section-->
       <section class="home-section" id="home-section-id">
         <div class="home-section-image-container">
           <img src="images-and-icons/images/home.png" alt="home-section-image" class="home-section-image">
@@ -89,7 +94,66 @@
 
       </section>
 
-      <!--Services Section -->
+      <!--About Section-->
+      <section class="about-section" id="about-section-id">
+
+        <div class="about-container">
+
+          <!-- IMAGE SIDE -->
+          <div class="about-image-wrapper">
+            <img src="images-and-icons/images/Gallery/IMG-20260505-WA0006.jpg" alt="Spa Image" class="about-image">
+          </div>
+
+          <!-- TEXT SIDE -->
+          <div class="about-content">
+
+            <p class="about-subtitle">Spa Sanctuary</p>
+
+            <h2 class="about-years">
+              10+ <span>Years of Harmony</span>
+            </h2>
+
+            <h3 class="about-small-title">Our Essence</h3>
+
+            <h1 class="about-title">
+              A Sanctuary of Pure Rejuvenation
+            </h1>
+
+            <p class="about-description">
+              Located in the prestigious Daisy Street of Sandton, Beyond Beauty Pure Harmony Spa is more than just a spa—it's a sanctuary for the soul. We believe that true beauty is born from a deep sense of internal harmony and well-being.
+            </p>
+
+            <p class="about-description">
+              Our tranquil environment is meticulously designed to transport you away from the bustle of Johannesburg life. Every detail, from the soft amber lighting to the gentle aroma of essential oils, is crafted to ensure your journey with us is nothing short of transformative.
+            </p>
+
+            <!-- FEATURES -->
+            <div class="about-features">
+              <div class="feature">
+                <h4>Expert Therapists</h4>
+                <p>Certified professionals dedicated to your comfort and health.</p>
+              </div>
+
+              <div class="feature">
+                <h4>Premium Products</h4>
+                <p>Only the finest organic and scientifically-proven ingredients.</p>
+              </div>
+            </div>
+
+            <!-- BUTTONS -->
+            <div class="about-buttons">
+              <button class="about-btn primary">Discover Our Philosophies</button>
+              <button class="about-btn secondary">Our Offerings</button>
+              <button class="about-btn secondary">Signature Ritual</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!--Services Section-->
     <section class="services-section" id="services-section-id">
 
       <h2>Our Services</h2>
@@ -227,7 +291,126 @@
         </section>
 
       </section>
+  
+      <!-- TESTIMONIALS SECTION -->
+      <section class="testimonials-section" id="testimonials-section-id">
 
+        <p class="testimonials-subtitle">Kind Words</p>
+        <h2 class="testimonials-title">Guest Experiences</h2>
+
+        <div class="testimonials-container">
+
+          <!-- CARD 1 -->
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "Beyond Beauty is truly the most peaceful place in Sandton. The hot stone massage was transformative. I left feeling like a completely different person."
+            </p>
+
+            <div class="testimonial-user">
+              <h4>Sarah Montgomery</h4>
+              <span>Sandton Resident</span>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "A professional and luxurious experience from start to finish. The attention to detail and the tranquil atmosphere make it my go-to for stress relief."
+            </p>
+
+            <div class="testimonial-user">
+              <h4>James Harrison</h4>
+              <span>Business Executive</span>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "The organic glow facial is a must! My skin has never looked better. The environment is so calming, you forget you are in the middle of a busy city."
+            </p>
+
+            <div class="testimonial-user">
+              <h4>Elena Volkova</h4>
+              <span>Wellness Blogger</span>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="contact-section" id="contact-section-id">
+
+        <div class="contact-container">
+
+          <!-- LEFT INFO -->
+          <div class="contact-info">
+
+            <p class="contact-subtitle">Reservation</p>
+            <h2 class="contact-title">Begin Your Journey</h2>
+
+            <p class="contact-description">
+              Secure your moment of peace today. Our expert coordinators will ensure your visit is perfectly tailored to your needs.
+            </p>
+
+            <!-- PHONE -->
+            <div class="contact-block">
+              <h4>Direct Line</h4>
+              <p>082 663 8891</p>
+              <span>Call or WhatsApp to book</span>
+            </div>
+
+            <!-- LOCATION -->
+            <div class="contact-block">
+              <h4>Visit Us</h4>
+              <p>2nd floor, Opp Imizizi, 135 Daisy Street, Sandown, Sandton, 2196</p>
+            </div>
+
+            <!-- HOURS -->
+            <div class="contact-block">
+              <h4>Opening Times</h4>
+              <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+              <p>Sunday: 12:00 PM - 5:00 PM</p>
+            </div>
+
+          </div>
+
+          <!-- RIGHT FORM -->
+          <div class="contact-form-wrapper">
+
+            <h3>Request a Callback</h3>
+
+            <form class="contact-form">
+
+              <input type="text" placeholder="Your Name (e.g. Sarah J.)" required>
+
+              <input type="tel" placeholder="Phone Number (082 663 8891)" required>
+
+              <select required>
+                <option value="">Select a service...</option>
+                <option>Massage</option>
+                <option>Facial</option>
+                <option>Waxing</option>
+                <option>Foot Care</option>
+              </select>
+
+              <input type="date" required>
+
+              <button type="submit" class="contact-btn">Request Booking</button>
+
+              <p class="form-note">
+                By submitting this form, you agree to our privacy policy. Our team will contact you within 2 hours to confirm your appointment.
+              </p>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </section>
 
     </main>
     <!-- Image Modal -->
@@ -242,10 +425,59 @@
       </div>
     </div>
 
-    <footer>
+    <!-- FOOTER -->
+    <footer class="footer">
+
+      <div class="footer-container">
+
+        <!-- BRAND -->
+        <div class="footer-brand">
+          <h2>Beyond Beauty Pure Harmony Spa</h2>
+          <p>
+            Your sanctuary of peace in the heart of Sandton. We are dedicated to providing a rejuvenating experience that harmonizes body, mind, and spirit through world-class luxury treatments.
+          </p>
+        </div>
+
+        <!-- NAVIGATION -->
+        <div class="footer-links">
+          <h3>Navigation</h3>
+          <p class="footer-link js-home">Home</p>
+          <p class="footer-link js-about">About Us</p>
+          <p class="footer-link js-services">Services</p>
+          <p class="footer-link js-gallery">Gallery</p>
+          <p class="footer-link js-contact">Book Appointment</p>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-contact">
+          <h3>Connect</h3>
+          <p>082 663 8891</p>
+          <p>2nd floor, Opp Imizizi, 135 Daisy Street, Sandown, Sandton, 2196</p>
+          <p>info@pureharmonyspa.co.za</p>
+
+          <!-- SOCIALS -->
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/bbph_spa/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/p/Beyond-Beauty-Pure-Harmony-Spa-100083228956172/" target="_blank">Facebook</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BOTTOM -->
+      <div class="footer-bottom">
+        <p>© 2026 Beyond Beauty Pure Harmony Spa. All rights reserved.</p>
+
+        <div class="footer-policy">
+          <span>Privacy Policy</span>
+          <span>Terms of Service</span>
+        </div>
+      </div>
 
     </footer>
+
     <script src="Scripts/header.js"></script>
     <script type="module" src="Scripts/gallery.js"></script>
+    <script src="Scripts/contact.js"></script>
   </body>
 </html>
