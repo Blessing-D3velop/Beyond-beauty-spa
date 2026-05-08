@@ -54,6 +54,26 @@ navMap.forEach((item) => {
   elements.forEach((el) => {
     el.addEventListener("click", () => {
       scrollToSection(item.target);
+        mobileHeader.classList.remove("active");
     });
+  });
+});
+
+
+const bookNowButtons = document.querySelectorAll('.js-book-now-btn');
+
+bookNowButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    
+    // OPTION 1: Scroll to contact section
+    const contactSection = document.querySelector('#contact-section-id');
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+
+    // OPTIONAL: close mobile menu if open
+    const mobileMenu = document.querySelector('.js-mobile-menu');
+    if (mobileMenu) {
+      mobileMenu.classList.remove('active');
+    }
+
   });
 });
